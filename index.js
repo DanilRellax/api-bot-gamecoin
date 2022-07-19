@@ -24,7 +24,7 @@ var token = ''
 
 // Проверка баланса (любого пользователя, можно и своего.)
 async function getBalance() {
-	let { data } = await axios.post('https://localhost:9090/api/user.getBalance', {
+	let { data } = await axios.post('https://dan-app.space:9090/api/user.getBalance', {
 		"uid": uid,
 	})
 	return data.balance;
@@ -32,7 +32,7 @@ async function getBalance() {
 
 // История переводов
 async function payHistory() {
-	let { data } = await axios.post('https://localhost:9090/api/merchant.getTransfer', {
+	let { data } = await axios.post('https://dan-app.space:9090/api/merchant.getTransfer', {
 		"token": token,
 		"count": 5 // по умолчанию - 5, но можете поставить 20 к примеру.
     })
@@ -68,7 +68,7 @@ setInterval(async() => {
 
 // Вывод Game Coin'ов
 async function sendCoin() {
-  let { data } = await axios.post('https://localhost:9090/api/merchant.send', {
+  let { data } = await axios.post('https://dan-app.space:9090/api/merchant.send', {
   "token": token,
   "to": uid,
   "sum": 100 // это сумма перевода.
@@ -80,7 +80,7 @@ async function sendCoin() {
 
 // Редактор мерчанта: смена именни, фото, описание и ID - группы!
 async function editMerchant() {
-	let { data } = await axios.post('https://localhost:9090/api/merchant.edit', {
+	let { data } = await axios.post('https://dan-app.space:9090/api/merchant.edit', {
 		"token": token,
 		"name": 'Тестовое название мерчанта',
 		"photo": 'https://sun6-23.userapi.com/s/v1/ig2/iUQf1PhVSlqdnYYueAK6crGxl5HxPnptg8_qcLC289X5ViydK__gDBSDHHbf7Y72nVuIogl_dYKeSqxoyBpOBh2P.jpg?size=200x200&quality=95&crop=0,0,500,500&ava=1',
