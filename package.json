@@ -1,0 +1,18 @@
+{
+  "name": "api-bot-gamecoin",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Danil Filatov",
+  "link_author": "https://vk.com/id198700932",
+  "license": "MIT",
+  "dependencies": {
+    "https": "^1.0.0",
+    "axios": "^0.21.1",
+    "fs": "^0.0.1-security",
+    "vk-io": "^4.0.0-rc.30"
+  },
+  "description": "Бот создан для тех кто не разбирается в запросах.. Пользуйтесь :)"
+}
