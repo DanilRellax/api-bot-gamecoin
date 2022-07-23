@@ -1,7 +1,5 @@
-// Модули для запросов к серверу GameCoin!
+// Модуль для запросов к серверу GameCoin!
 const axios = require('axios');
-const https = require('https');
-const httsAgent = new https.Agent({ rejectUnauthorized: false });
 
 // Модуль для сохранение Json - файла.
 const fs = require('fs');
