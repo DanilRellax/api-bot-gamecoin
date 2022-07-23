@@ -36,7 +36,7 @@ async function payHistory() {
 		"token": token,
 		"count": 5 // по умолчанию - 5, но можете поставить 20 к примеру.
     })
-    return data.list;
+    return data;
 }
 
 // Пополнение мерчанта
